@@ -41,22 +41,19 @@ while True:
         f = open("cvlog.txt", "a")
         f.write(currentdate + "," + currenttime + "," + cases + "," + deaths + "," + recovered+"\n")
         f.close()
+        print("Cases = " + cases)
+        print("Deaths = " + deaths)
+        print("Recovered = " + recovered)
+        message = "Cases = " + cases + " Deaths = " + deaths + " Rec = " + recovered
+        print(message)
+
+        sense.show_message(message,text_colour=[255,0,0])
+        sense.show_message('')
+
+
+        sleep(60)
             
-    #print(results)
-    results = results.split(",")
-    cases = results[0].strip()
-    deaths = results[1].strip()
-    recovered = results[2].strip()
-    print("Cases = " + cases)
-    print("Deaths = " + deaths)
-    print("Recovered = " + recovered)
-    message = "Cases = " + cases + " Deaths = " + deaths + " Rec = " + recovered
-    print(message)
-
-    sense.show_message(message,text_colour=[255,0,0],back_colour=[0,255,0])
-    sense.show_message('')
-
-
-    sleep(60)
+    
+    
 
 
