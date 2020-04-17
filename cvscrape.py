@@ -4,8 +4,8 @@ from time import sleep
 from datetime import datetime
 
 #next two lines raspberry pi only and sensehat
-from sense_hat import SenseHat
-sense = SenseHat()
+#from sense_hat import SenseHat
+#sense = SenseHat()
 
 #create logfile
 f = open("cvlog.txt", "a")
@@ -47,8 +47,8 @@ while True:
         message = "Cases = " + cases + " Deaths = " + deaths + " Rec = " + recovered
         print(message)
 
-        sense.show_message(message,text_colour=[255,0,0])
-        sense.show_message('')
+        #sense.show_message(message,text_colour=[255,0,0])
+        #sense.show_message('')
 
 
         sleep(60)
