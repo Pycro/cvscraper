@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import requests
 from bs4 import BeautifulSoup
 from time import sleep
@@ -19,8 +21,8 @@ while True:
     hrcheck = currenttime.split(":")
     hrcheck2 = hrcheck[1]
     #print(hrcheck2)
-    print(currentdate)
-    print(currenttime)
+    #print(currentdate)
+    #print(currenttime)
     results = "0,0,0,0"
     if(hrcheck2.startswith("00")):
         #grab fresh data
